@@ -1,6 +1,6 @@
-const employee = require('../lib/employee.js');
+const Employee = require('../lib/employee.js');
 
-const employeeTest = new Employee ("Prerana","Shuklaprerana01@gmail.com", 1 , "Employee");
+const employeeTest = new Employee ("Prerana",1,"Shuklaprerana01@gmail.com" , "Employee");
 
 
 describe('employee', () => {
