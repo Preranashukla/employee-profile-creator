@@ -153,6 +153,14 @@ function employeeInfo() {
 
             }
 
+            //genrate file
+
+            const createTeam = () => {
+                if (!fs.existsSync(DIST_DIRECTORY)){
+                  fs.mkdirSync(DIST_DIRECTORY);
+                }fs.writeFileSync(distPath, generateTemplate(teamMembers), "utf-8");
+              
+              }
            
 
             //add option 
@@ -168,13 +176,10 @@ function employeeInfo() {
                 .then(res =>{
                     if(res.addMore === true){
                         employeeInfo(teamMembers);
-                    }  else{
-                        const createTeam = () => {
-                            if (!fs.existsSync(DIST_DIRECTORY)){
-                              fs.mkdirSync(DIST_DIRECTORY);
-                            }fs.writeFileSync(distPath, generateTemplate(teamMembers), "utf-8");
-                          
-                          }
+                    } else {
+                        console.log(teamMembers)
+                        createTeam(teamMembers)
+
                     }
                 })
             }
