@@ -2,7 +2,6 @@
    
   ### License
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-  https://opensource.org/licenses/MIT
   This application is licensed under MIT license.
   ### Installation
   I recommend to clone the git repo
@@ -32,5 +31,7 @@
   ### Github
   If you'd like to see my other work please visit my github.
   [Github](https://github.com/Preranashukla/employee-profile-creator.git)
+  
+  ## Video Demo
   [Video Demo](https://drive.google.com/file/d/1F7RFqpHaAbmBILUObKkZZt-K4-xp_Gl1/view)
    
