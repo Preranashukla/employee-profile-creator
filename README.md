@@ -19,8 +19,15 @@
   ### Email
   If you have any questions please reach out by email. 
   [Email](shuklaprerana01@gmail.com)
-  #HTML Page
-  ./demo.png
+  
+ ## Team Profile App
+    * When you run the application you will be able to create the team profile with three designation Manager , Engineer and Intern
+    * Used Jest to test the fuctions
+    * Use inqurirer to prompt the question
+    * Used fs to write the file.
+    
+    
+![](./demo.PNG)
   
   ### Github
   If you'd like to see my other work please visit my github.
