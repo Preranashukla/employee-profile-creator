@@ -12,17 +12,13 @@ let generatehtmlPage = employee => {
         let finalPrompt = employee[i].office || employee[i].gitHub || employee[i].school;
         let keys = Object.keys(employee[i]);
         let lastKey = keys[4];
-        let finalOption = lastKey + ":" + finalPrompt
+        let finalResult = lastKey + ":" + finalPrompt
 
         if (lastKey === undefined){
-            finalOption = "";
+            finalResult = "";
 
-        } else if (lastKey === 'gitHub'){
-            finalOption = (`GitHub : <a href = 'https://www.github.com/${employee[i].gitHub}'> ${employee[i].gitHub}</a>`)
-            console.log(finalOption)
-        }
-        else{
-            console.log(finalOption)
+        } else if(lastKey === 'gitHub'){
+            finalResult = (`GitHub : <a href = 'https://www.github.com/${employee[i].gitHub}'> ${employee[i].gitHub}</a>`)
         }
 
 
@@ -30,14 +26,14 @@ let generatehtmlPage = employee => {
         let {name, role, email, id} = employee[i]
         htmlCard+= `
          <div class="card col" style="width: 18rem;">
-         <div class="card-body card-header">
+         <div class="card-body card-header bg-primary">
              <h5 class="card-title">${name}</h5>
              <h6 class="card-subtitle mb-2 text-muted">${role}</h6>
          </div>
          <ul class="list-group list-group-flush">
              <li class="list-group-item">Email: <a href=mailto:${email}>${email}</a></li>
              <li class="list-group-item">Employee ID: ${id}</li>
-             <li class="list-group-item"> ${finalOption}</li>
+             <li class="list-group-item"> ${finalResult}</li>
              
              
          </ul>
@@ -63,11 +59,13 @@ let generatehtmlPage = employee => {
     </head>
     
     <body>
-        <nav class="navbar">
-            <div class="navbar-header">
-                <span class="navbar-brand mb-0 h1">My Team</span>
-            </div>
-        </nav>
+    <div class="container-fluid">
+    <div class="row bg-danger">
+        <div class="col-12 jumbotron mb-3 team-heading bg-danger">
+            <h1 class="text-center">My Team</h1>
+        </div>
+    </div>
+</div>
     
         <main class="container">
             <div class="row">
@@ -92,9 +90,3 @@ let generatehtmlPage = employee => {
 
 
 module.exports = generatehtmlPage;
-
-
- //template for html file
-
-
- 
