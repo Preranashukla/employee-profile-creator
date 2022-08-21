@@ -42,26 +42,26 @@ function employeeInfo() {
 
         {
             type: 'input',
-            message: 'Enter Email: ',
-            name: 'email',
-            validate: function (emailInput) {
-                if (emailInput) {
+            message: 'Enter employee ID: ',
+            name: 'id',
+            validate: function (idInput) {
+                if (idInput) {
                     return true;
                 } else {
-                    return 'Please enter Employee e-mail address.';
+                    return 'Please enter Employee ID.';
                 }
             }
         },
 
         {
             type: 'input',
-            message: 'Enter Employee Id: ',
-            name: 'id',
-            validate: function (idInput) {
-                if (idInput) {
+            message: 'Enter Employee email: ',
+            name: 'email',
+            validate: function (emailInput) {
+                if (emailInput) {
                     return true;
                 } else {
-                    return 'Please enter Employee Id.';
+                    return 'Please enter Employee email.';
                 }
             }
         },
@@ -97,7 +97,7 @@ function employeeInfo() {
                 ])
                 .then(response => {
                     console.log(response.office);
-                    const createManagerTeam = new Manager (answers.name, answers.email, answers.id, answers.role, response.office)
+                    const createManagerTeam = new Manager (answers.name, answers.id, answers.email, answers.role, response.office)
                     teamMembers.push(createManagerTeam);
                     addOption()
                 })
@@ -118,7 +118,7 @@ function employeeInfo() {
                 ])
                 .then(response => {
                     console.log(response.gitHub);
-                    const createEngineerTeam = new Engineer (answers.name, answers.email, answers.id, answers.role, response.gitHub)
+                    const createEngineerTeam = new Engineer (answers.name, answers.id, answers.email, answers.role, response.gitHub)
                     teamMembers.push(createEngineerTeam);
                     addOption()
                 })
@@ -140,14 +140,14 @@ function employeeInfo() {
                 ])
                 .then(response =>{
                     console.log(response.school);
-                    const createInternTeam = new Intern (answers.name,  answers.email, answers.id, answers.role, response.school)
+                    const createInternTeam = new Intern (answers.name,  answers.id, answers.email, answers.role, response.school)
                     teamMembers.push(createInternTeam);
                     addOption()
                 })
             }
 
             else {
-                const createEmployee = new Employee (answers.name, answers.email, answers.id, answers.role);
+                const createEmployee = new Employee (answers.name, answers.id, answers.email, answers.role);
                 teamMembers.push(createEmployee);
                 addOption()
 
@@ -188,6 +188,3 @@ function employeeInfo() {
 
 
 employeeInfo();
-
-
-
