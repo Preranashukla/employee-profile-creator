@@ -19,8 +19,11 @@
   ### Email
   If you have any questions please reach out by email. 
   [Email](shuklaprerana01@gmail.com)
+  #HTML Page
+  ./demo.png
   
   ### Github
   If you'd like to see my other work please visit my github.
   [Github](https://github.com/Preranashukla/employee-profile-creator.git)
+  [Video Demo](https://drive.google.com/file/d/1F7RFqpHaAbmBILUObKkZZt-K4-xp_Gl1/view)
    
