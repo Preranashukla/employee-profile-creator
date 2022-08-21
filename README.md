@@ -9,9 +9,9 @@
   ### Testing
   Use Jest
   ### Description
-  Node.js Team profile generator is a console application for auto-generating a development application Team HTML page with style. A user of the Node.js Employee profile generatot initiates the program in the console using node index.js. The application will then prompt the user through a series of questions to collect information to fill in a index.html file template.
+   Team Site Generator is a console application for auto-generating a team landing webpage with basic team member contact information. A user of the Team Site Generator   initiates the application in the console using node index.js. The application will then prompt the user through a series of questions to collection information about      the team and its members which are subsequently used to create a team site landing page displaying the team information.
 
-The application is created with JavaScript and can be run using the Node.js runtime environment. The application makes use of the inquirer package for defining the user show prompts and borrowed from the email-validator package for creating a email-validation function.
+   This application is created with JavaScript and can be run using the Node.js runtime environment. This application was developed following an object orientated          programming (OOP) paradigm and a test driven development (TDD) methodology.on.
   ### Languages
   js,html,css,es6,node,jquery,bootstrap
   ### Contributors
