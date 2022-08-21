@@ -1,15 +1,4 @@
 # employee-profile-creator
-
-  # Team Profile Generator
-  ## Table of Contents
-  * [License](#license)
-  * [Installation](#installation)
-  * [Testing](#testing)
-  * [Description](#description)
-  * [Languages](#languages)
-  * [Contributors](#contributors)
-  * [Email](#email)
-  * [Github](#github)
    
   ### License
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
