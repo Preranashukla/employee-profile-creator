@@ -1,17 +1,16 @@
-
 //html template
 
-let generatehtmlPage = teamObj => {
-    console.log('team object', teamObj)
+let generatehtmlPage = employee => {
+    //console.log('team ', employee)
 
    // set card to empty
     let htmlCard = ""
 
     //loop over array of objects
 
-    for(let i = 0; i < teamObj.length; i++){
-        let finalPrompt = teamObj[i].office || teamObj[i].gitHub || teamObj[i].school;
-        let keys = Object.keys(teamObj[i]);
+    for(let i = 0; i < employee.length; i++){
+        let finalPrompt = employee[i].office || employee[i].gitHub || employee[i].school;
+        let keys = Object.keys(employee[i]);
         let lastKey = keys[4];
         let finalOption = lastKey + ":" + finalPrompt
 
@@ -19,7 +18,7 @@ let generatehtmlPage = teamObj => {
             finalOption = "";
 
         } else if (lastKey === 'gitHub'){
-            finalOption = (`GitHub : <a href = 'https://www.github.com/${teamObj[i].gitHub}'> ${teamObj[i].gitHub}</a>`)
+            finalOption = (`GitHub : <a href = 'https://www.github.com/${employee[i].gitHub}'> ${employee[i].gitHub}</a>`)
             console.log(finalOption)
         }
         else{
@@ -28,7 +27,7 @@ let generatehtmlPage = teamObj => {
 
 
        //htmll card
-        let {name, role, email, id} = teamObj[i]
+        let {name, role, email, id} = employee[i]
         htmlCard+= `
          <div class="card col" style="width: 18rem;">
          <div class="card-body card-header">
