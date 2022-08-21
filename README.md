@@ -22,5 +22,5 @@ The application is created with JavaScript and can be run using the Node.js runt
   
   ### Github
   If you'd like to see my other work please visit my github.
-  [Github](https://github.com/Pshukla)
+  [Github](https://github.com/Preranashukla/employee-profile-creator.git)
    
